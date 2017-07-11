@@ -1,4 +1,8 @@
-# Purgecss-from-html
+# Purgecss-from-html  
+[![Build Status](https://travis-ci.org/FullHuman/purgecss-from-html.svg?branch=master)](https://travis-ci.org/FullHuman/purgecss-from-html)
+[![CircleCi](https://circleci.com/gh/FullHuman/purgecss-from-html/tree/master.svg?style=shield)]()
+[![dependencies Status](https://david-dm.org/fullhuman/purgecss-from-html/status.svg)](https://david-dm.org/fullhuman/purgecss-from-html)
+[![devDependencies Status](https://david-dm.org/fullhuman/purgecss-from-html/dev-status.svg)](https://david-dm.org/fullhuman/purgecss-from-html?type=dev)
 
 Get the selectors of an html file.
 
