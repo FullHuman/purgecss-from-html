@@ -1,6 +1,6 @@
 {
   "name": "purge-from-html",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Html extractor for purgecss - get all selectors from a html file",
   "main": "./lib/purgehtml.js",
   "module": "./lib/purgehtml.es.js",
