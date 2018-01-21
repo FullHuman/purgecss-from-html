@@ -26,7 +26,7 @@ describe("purgehtml", () => {
     it("finds all selectors", () => {
         const received = purgehtml.extract(TEST_1_CONTENT)
         const selectors = [...TEST_1_TAG, ...TEST_1_CLASS, ...TEST_1_ID]
-        for (let item of TEST_1_TAG) {
+        for (let item of selectors) {
             expect(received.includes(item)).toBe(true)
         }
     })
