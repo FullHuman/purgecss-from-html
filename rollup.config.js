@@ -3,25 +3,21 @@ import commonjs from "rollup-plugin-commonjs"
 import resolve from "rollup-plugin-node-resolve"
 
 export default {
-    entry: "index.js",
-    targets: [
+    input: "index.js",
+    output: [
         {
-            dest: "lib/purgehtml.es.js",
+            file: "lib/purgehtml.es.js",
             format: "es"
         },
         {
-            dest: "lib/purgehtml.js",
+            file: "lib/purgehtml.js",
             format: "cjs"
         }
     ],
     plugins: [
         resolve(),
         commonjs(),
-        babel({
-            exclude: "node_modules/**",
-            presets: [["es2015", { modules: false }]]
-        })
+        babel()
     ],
-    external: ["parse5"],
-    sourceMap: false
+    external: ["parse5"]
 }
