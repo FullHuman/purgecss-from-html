@@ -20,6 +20,8 @@ const getSelectorsInNodes = node => {
                 ...ids,
                 ...getSelectorsInNodes(childNode)
             ]
+        } else if (childNode.type === "root") {
+            return getSelectorsInNodes(childNode);
         }
     }
     return selectors
