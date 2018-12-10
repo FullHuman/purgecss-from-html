@@ -23,7 +23,7 @@ const getSelectorsInNodes = node => {
         } else if (childNode.type === "root") {
             selectors = [
                 ...selectors,
-                getSelectorsInNodes(childNode)
+                ...getSelectorsInNodes(childNode)
             ]
         }
     }
