@@ -16,8 +16,8 @@ export default {
     ],
     plugins: [
         resolve(),
-        commonjs(),
+        // commonjs(),
         babel()
     ],
-    external: ["parse5"]
+    external: ["parse5", "parse5-htmlparser2-tree-adapter"]
 }

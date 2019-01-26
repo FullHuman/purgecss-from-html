@@ -1,6 +1,6 @@
 {
     "name": "purgecss-from-html",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Html extractor for purgecss - get all selectors from a html file",
     "main": "./lib/purgehtml.js",
     "module": "./lib/purgehtml.es.js",
@@ -29,17 +29,17 @@
     },
     "homepage": "https://github.com/FullHuman/purgecss-from-html#readme",
     "devDependencies": {
-        "babel-plugin-external-helpers": "^6.22.0",
-        "babel-preset-env": "^1.6.1",
-        "eslint": "^4.16.0",
-        "jest": "^22.1.4",
-        "rollup": "^0.54.1",
-        "rollup-plugin-babel": "^3.0.3",
-        "rollup-plugin-commonjs": "^8.2.6",
-        "rollup-plugin-node-resolve": "^3.0.2",
+        "@babel/preset-env": "^7.0.0",
+        "eslint": "^5.12.1",
+        "jest": "^24.0.0",
+        "rollup": "^1.1.2",
+        "rollup-plugin-babel": "^4.3.2",
+        "rollup-plugin-commonjs": "^9.2.0",
+        "rollup-plugin-node-resolve": "^4.0.0",
         "rollup-watch": "^4.3.1"
     },
     "dependencies": {
-        "parse5": "^4.0.0"
+        "parse5": "^5.1.0",
+        "parse5-htmlparser2-tree-adapter": "^5.1.0"
     }
 }

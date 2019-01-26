@@ -1,4 +1,5 @@
 import parse5 from "parse5"
+import htmlparser2 from "parse5-htmlparser2-tree-adapter"
 
 const getSelectorsInNodes = node => {
     let selectors = []
@@ -33,7 +34,7 @@ const getSelectorsInNodes = node => {
 class PurgeFromHtml {
     static extract(content) {
         const tree = parse5.parse(content, {
-            treeAdapter: parse5.treeAdapters.htmlparser2
+            treeAdapter: htmlparser2
         })
         return getSelectorsInNodes(tree)
     }

@@ -1,25 +1,21 @@
 {
     "env": {
-        "test": {
-            "presets": [
-                "env"
-            ]
-        },
-        "development": {
-            "presets": [
-                [
-                    "env",
-                    {
-                        "targets": {
-                            "ie": 8
-                        },
-                        "modules": false
-                    }
-                ]
-            ],
-            "plugins": [
-                "external-helpers"
-            ]
-        }
+      "test": {
+        "presets": ["@babel/preset-env"]
+      },
+      "development": {
+        "presets": [
+          [
+            "@babel/preset-env",
+            {
+              "targets": {
+                "browsers": ["last 2 versions"]
+              },
+              "modules": false
+            }
+          ]
+        ]
+      }
     }
-}
+  }
+  
